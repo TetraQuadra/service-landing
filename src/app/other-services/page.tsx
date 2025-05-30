@@ -80,7 +80,7 @@ const MainServices = () => {
         <>
             <section className="w-full py-16 " id="services">
                 <div className="mx-auto container px-2 w-full">
-                    <h2 className="text-[40px] font-[500] text-center mb-6 opacity-0">Main Services</h2>
+                    <h2 className="text-[64px] max-lg:text-[44px] max-sm:text-[36px] font-[600] text-center mb-12 bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent">OTHER SERVICES</h2>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {services.map((service, idx) => (
                             <div

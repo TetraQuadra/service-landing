@@ -85,7 +85,11 @@ const MainServices = () => {
                                 variant={getButtonVariant(idx)}
                                 icon
                                 className="mt-auto w-fit"
-                                onClick={(e) => handleSmoothScroll(e, "#contact")}
+                                onClick={(e) => {
+                                    if (service.link === "#contact") {
+                                        handleSmoothScroll(e, "#contact");
+                                    }
+                                }}
                             >
                                 {service.link === "#contact" ? "Book now" : "Other services"}
                             </LinkStyled>
