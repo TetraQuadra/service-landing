@@ -50,8 +50,9 @@ const ContactUs = () => {
         return phoneRegex.test(phone);
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const validatePhoneUK = (phone: string): boolean => {
-        const phoneRegex = /^(?:\+44\s?|0)(?:\d\s?){10}$/;
+        // const phoneRegex = /^(?:\+44\s?|0)(?:\d\s?){10}$/;
         // return phoneRegex.test(phone);
         // TODO: Remove this
         return true;
