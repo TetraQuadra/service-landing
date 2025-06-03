@@ -12,18 +12,18 @@ const MainServices = () => {
             link: "/other-services",
         },
         {
-            title: "Prepare to MOT",
-            description: "Thorough cleaning of gutter systems from leaves, debris and blockages. We prevent damage to facades and foundations, protecting your home from moisture and dampness.",
+            title: "Engine Diagnostics",
+            description: "Comprehensive check using computer tools and inspection to detect faults early and keep your engine running smoothly and efficiently.",
             link: "#contact",
         },
         {
-            title: "Regular service",
-            description: "Comprehensive cleaning of fascias and soffits from dirt, mold and algae. We restore the original appearance and extend the service life of facade elements.",
+            title: "Engine Overhaul",
+            description: "Complete engine disassembly with replacement or restoration of all major components to return your engine to factory-like performance and durability.",
             link: "#contact",
         },
         {
-            title: "Suspension repair",
-            description: "Comprehensive cleaning of fascias and soffits from dirt, mold and algae. We restore the original appearance and extend the service life of facade elements.",
+            title: "Partial Engine Repair",
+            description: "Targeted repairs such as replacing gaskets, timing belts, or pumps to fix specific issues without a complete engine teardown.",
             link: "#contact",
         },
     ];

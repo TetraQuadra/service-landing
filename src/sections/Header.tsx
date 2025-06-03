@@ -40,7 +40,7 @@ const Header = () => {
             <div className="flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2">
                     <Image src="/logo.svg" alt="Logo" width={45} height={35} />
-                    <span className="text-xl font-[500] font-[Orbitron]">YuraFix</span>
+                    <span className="text-xl font-[500] font-[Orbitron]">YuriyFix</span>
                 </Link>
                 <nav className="md:flex items-center gap-11 max-md:hidden max-lg:gap-6">
                     {navLinks.map((link) => (
