@@ -7,7 +7,7 @@ const Hero = () => {
         <>
             <section className="flex flex-col items-start justify-start container mx-auto px-2 py-8 relative gap-3 mb-[280px] pt-[80px] max-lg:pt-[22px] max-xl:mb-[65px]">
                 <h1 className="text-[54px] max-lg:text-[48px] max-md:text-[42px] font-[500] text-start max-md:leading-[1.2] bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent max-sm:text-[36px]">
-                    AUTO REPAIRS.{" "}
+                    AUTO REPAIRS{" "}
                     <span className="inline max-lg:block text-[42px] max-lg:text-[32px] max-sm:text-[20px]">
                         SAVING YOUR TIME AND HEADACHES
                     </span>
