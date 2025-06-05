@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import React from 'react';
 
 const CONTACTS = {
     address: 'Unit 1 Bure Valley Close Lamas Norwich NR10 5AF',
-    whatsapp: '+1123 356 56',
-    phone: '+1123 356 56',
+    whatsapp: '+44 7918 450051',
+    phone: '+44 7918 450051',
     facebook: 'https://facebook.com/',
 };
 
@@ -26,7 +27,7 @@ const ContactsSection: React.FC = () => {
 
                     <div className="mb-8">
                         <div className="text-[28px] font-semibold mb-2 bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent">Phone call</div>
-                        <div className="text-[20px] font-light">{CONTACTS.phone}</div>
+                        <Link href={`tel:${CONTACTS.phone}`} className="text-[20px] font-light">{CONTACTS.phone}</Link>
                     </div>
 
                     <a
