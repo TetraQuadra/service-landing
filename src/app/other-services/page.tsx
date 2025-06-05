@@ -43,8 +43,8 @@ const MainServices = () => {
             link: "#contact",
         },
         {
-            title: "Wheel Alignment",
-            description: "Professional wheel alignment service to improve handling, extend tire life, and ensure safe driving using precise equipment.",
+            title: "Cooling System Repair",
+            description: "Keep your engine cool and avoid overheating with radiator flushes, hose replacements, and water pump repairs.",
             link: "#contact",
         },
     ];
