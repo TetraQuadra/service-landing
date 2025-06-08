@@ -20,7 +20,7 @@ const Hero = () => {
                     href="#contact"
                     className=""
                     variant="black"
-                    aria-label="Contact us for window cleaning services"
+                    aria-label="Contact us for auto repair services"
                     onClick={(e) => handleSmoothScroll(e, "#contact")}
                 >
                     Book now

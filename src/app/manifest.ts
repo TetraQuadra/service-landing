@@ -2,18 +2,18 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "N&B Cleaning - Professional Window Cleaning Services",
-    short_name: "N&B Cleaning",
+    name: "YuriyFix - Professional Auto Repair Services",
+    short_name: "YuriyFix",
     description:
-      "Professional window cleaning services that deliver crystal clear results every time.",
+      "Professional auto repair and maintenance services in Norwich. Expert diagnostics, engine repair, and comprehensive vehicle maintenance.",
     start_url: "/",
     display: "standalone",
-    background_color: "#FFFBF3",
-    theme_color: "#16A34A",
+    background_color: "#000000",
+    theme_color: "#000000",
     icons: [
       {
         src: "/favicon.ico",
-        sizes: "64x64 32x32 24x24 16x16",
+        sizes: "any",
         type: "image/x-icon",
       },
       {
