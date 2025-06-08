@@ -52,9 +52,9 @@ const MainServices = () => {
     };
 
     return (
-        <section className="w-full py-16 " id="services">
+        <section className="w-full py-16 max-sm:py-4" id="services">
             <div className="mx-auto container px-2">
-                <h2 className="text-[40px] font-[500] text-center mb-6 opacity-0">Main Services</h2>
+                <h2 className="text-[40px] font-[500] text-center mb-6 hidden">Main Services</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {services.map((service, idx) => (
                         <div

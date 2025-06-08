@@ -118,11 +118,11 @@ const Feedback = () => {
     return (
         <section className="w-full py-16 ">
             <div className="mx-auto container px-2 max-lg:max-w-[600px]">
-                <h2 className="text-[40px] font-[500] text-center mb-8 bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent">Leave a feedback</h2>
+                <h2 className="text-[40px] font-[500] text-center mb-8 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">Leave a feedback</h2>
 
                 {formStatus.submitted ? (
                     <div className="text-center p-6  max-w-[600px] mx-auto">
-                        <h3 className="text-[24px] font-medium bg-gradient-to-r from-white to-[#999999] bg-clip-text text-transparent mb-2">Thank you!</h3>
+                        <h3 className="text-[24px] font-medium bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent mb-2 max-sm:text-white">Thank you!</h3>
                         <p className="text-[16px]">Your feedback has been successfully sent.</p>
                     </div>
                 ) : (
