@@ -8,7 +8,7 @@ const MainServices = () => {
     const services = [
         {
             title: "MAIN SERVICES",
-            description: "Professional window cleaning for any height and complexity. We use modern methods and eco-friendly products to achieve crystal clear windows without streaks or spots.",
+            description: "Count on me for fast, reliable, and honest car repair services — whether you need a quick fix, regular maintenance, or a full diagnostic check.",
             link: "/other-services",
         },
         {
