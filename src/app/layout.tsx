@@ -2,37 +2,106 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/sections/Header";
 import Script from "next/script";
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "N&B Cleaning",
-    "image": "https://nbcleaning.com/hero-image.png",
-    "description": "Professional window cleaning, gutter cleaning, and fascia cleaning services. Experience crystal clear results with our reliable services.",
+    "@type": "AutoRepair",
+    "name": "YuriyFix",
+    "image": "https://yuriyfix.uk/logo.png",
+    "url": "https://yuriyfix.uk",
+    "telephone": "+44-7918-450051",
     "address": {
         "@type": "PostalAddress",
-        "addressCountry": "UK"
+        "streetAddress": "Unit 1 Bure Valley Close",
+        "addressLocality": "Buxton",
+        "addressRegion": "Norfolk",
+        "postalCode": "NR10 5AF",
+        "addressCountry": "GB"
     },
-    "telephone": "+07774974895",
-    "email": "2024windowcleaning@gmail.com",
-    "priceRange": "££",
-    "openingHours": "Mo-Fr 08:00-18:00",
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.7557",
+        "longitude": "1.3074"
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+    },
     "sameAs": [
-        "https://facebook.com/nbcleaning",
-        "https://instagram.com/nbcleaning"
-    ]
+        "https://www.facebook.com/yuriyfix",
+        "https://www.instagram.com/yuriyfix"
+    ],
+    "priceRange": "££",
+    "areaServed": "Norwich",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Auto Repair Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Engine Diagnostics",
+                    "description": "Comprehensive engine diagnostics using modern computer tools"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Engine Repair",
+                    "description": "Complete engine repair and maintenance services"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "MOT Preparation",
+                    "description": "Professional MOT preparation and testing services"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Suspension Repair",
+                    "description": "Expert suspension repair and maintenance"
+                }
+            }
+        ]
+    }
 };
 
 export const metadata: Metadata = {
-    title: "Auto Repairs",
-    description: "Fast, precise repairs done with care — so you can skip the stress and get back on the road",
-    keywords: "auto repairs, auto repair, auto service, auto maintenance, auto parts, auto maintenance shop, auto repair shop, auto repair service, auto repair shop near me, auto repair shop in my area",
-    alternates: {
-        canonical: "/",
+    title: 'YuriyFix - Professional Car Repair Services in Norwich',
+    description: 'Expert car repair and maintenance services in Norwich. Specializing in engine diagnostics, repairs, MOT preparation, suspension work, and comprehensive vehicle maintenance. Professional service with modern equipment.',
+    keywords: 'car repair Norwich, engine diagnostics, engine repair, MOT preparation, suspension repair, transmission repair, computer diagnostics, oil change, cooling system repair, vehicle maintenance Norwich',
+    openGraph: {
+        title: 'YuriyFix - Professional Car Repair Services in Norwich',
+        description: 'Expert car repair and maintenance services in Norwich. Specializing in engine diagnostics, repairs, MOT preparation, suspension work, and comprehensive vehicle maintenance.',
+        url: 'https://yuriyfix.uk',
+        siteName: 'YuriyFix',
+        locale: 'en_GB',
+        type: 'website',
     },
     robots: {
         index: true,
         follow: true,
+    },
+    alternates: {
+        canonical: 'https://yuriyfix.uk',
     },
     viewport: {
         width: "device-width",
@@ -53,12 +122,12 @@ export default function RootLayout({
                 <link rel="apple-touch-icon" href="/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <Script
-                    id="structured-data-script"
+                    id="structured-data"
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
                 />
             </head>
-            <body className="antialiased w-full">
+            <body className={inter.className}>
                 <Header />
                 {children}
                 <Header />

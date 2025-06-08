@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const CONTACTS = {
-    address: 'Unit 1 Bure Valley Close Lamas Norwich NR10 5AF',
+    address: 'Unit 1 Bure Valley Close Buxton Norwich NR10 5AF',
     whatsapp: '+44 7918 450051',
     phone: '+44 7918 450051',
     facebook: 'https://facebook.com/',

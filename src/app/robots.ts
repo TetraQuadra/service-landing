@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/admin/"],
+      disallow: ["/private/", "/admin/"],
     },
-    sitemap: "https://nbcleaning.com/sitemap.xml",
+    sitemap: "https://yuriyfix.uk/sitemap.xml",
   };
 }
