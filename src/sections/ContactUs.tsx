@@ -50,12 +50,9 @@ const ContactUs = () => {
         return phoneRegex.test(phone);
     };
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const validatePhoneUK = (phone: string): boolean => {
-        // const phoneRegex = /^(?:\+44\s?|0)(?:\d\s?){10}$/;
-        // return phoneRegex.test(phone);
-        // TODO: Remove this
-        return true;
+        const phoneRegex = /^(?:\+44\s?|0)(?:\d\s?){10}$/;
+        return phoneRegex.test(phone);
     };
 
     const handleServerResponse = (ok: boolean, msg: string) => {
@@ -122,10 +119,6 @@ const ContactUs = () => {
     };
 
     const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        // TODO: Remove this
-        return handleServerResponse(true, "Thank you for your request!");
-
-
         e.preventDefault();
 
         let hasErrors = false;
@@ -158,7 +151,7 @@ const ContactUs = () => {
             formData.append(key, value);
         });
 
-        fetch("https://formspree.io/f/", {
+        fetch("https://formspree.io/f/manjqgpd", {
             method: "POST",
             body: formData,
             headers: {

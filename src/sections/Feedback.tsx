@@ -76,9 +76,6 @@ const Feedback = () => {
     };
 
     const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        // TODO: Remove this
-        return handleServerResponse(true, "Thank you for your feedback!");
-
         e.preventDefault();
 
         setFormStatus({
@@ -97,7 +94,7 @@ const Feedback = () => {
             formData.append(key, value.toString());
         });
 
-        fetch("https://formspree.io/f/", {
+        fetch("https://formspree.io/f/xzzgdljo", {
             method: "POST",
             body: formData,
             headers: {
