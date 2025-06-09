@@ -133,17 +133,20 @@ export default function RootLayout({
                 <Header />
 
                 {/* Google Analytics */}
-                {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-XN0S2P1G4N" strategy="beforeInteractive" />
-                <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16909240887" strategy="beforeInteractive" />
+                <Script
+                    src={`https://www.googletagmanager.com/gtag/js?id=G-F6K2TZPYFN`}
+                    strategy="afterInteractive"
+                />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-XN0S2P1G4N');
-                    gtag('config', 'AW-16909240887');
+                    gtag('config', 'G-F6K2TZPYFN', {
+                        page_path: window.location.pathname,
+                    });
                     `}
-                </Script> */}
+                </Script>
             </body>
         </html>
     );
