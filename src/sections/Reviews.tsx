@@ -148,7 +148,7 @@ const Reviews = () => {
     return (
         <section className="py-16 w-full overflow-hidden" id="reviews">
             <div className="container mx-auto">
-                <h2 className="text-[64px] max-lg:text-[44px] max-sm:text-[36px] font-[600] text-center mb-12 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">REVIEWS</h2>
+                <h2 className="text-[48px] max-lg:text-[44px] max-sm:text-[36px] font-[600] text-center mb-12 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">REVIEWS</h2>
 
                 <div
                     className="md:hidden w-full relative"

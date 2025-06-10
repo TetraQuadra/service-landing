@@ -13,7 +13,7 @@ const ContactsSection: React.FC = () => {
         <section className="w-full min-h-[500px] py-12 px-2 bg-black flex flex-col items-center justify-center" id="contacts">
             <div className="container mx-auto flex flex-col lg:flex-row gap-8 lg:gap-16 items-stretch">
                 <div className="flex-1 flex flex-col justify-center text-white font-['Orbitron'] max-w-xl max-md:items-center max-md:text-center">
-                    <h2 className="text-[48px] font-bold mb-8 tracking-wider bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">CONTACTS</h2>
+                    <h2 className="text-[48px] font-bold mb-8 tracking-wider bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-[36px] max-sm:text-white">CONTACTS</h2>
 
                     <div className="mb-8">
                         <div className="text-[28px] font-semibold mb-2 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">Adress:</div>

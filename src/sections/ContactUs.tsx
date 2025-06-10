@@ -177,7 +177,7 @@ const ContactUs = () => {
 
             <div className="container mx-auto flex gap-16">
                 <div className="max-w-[600px] w-full mx-auto">
-                    <h2 className="text-[40px] font-[500] text-center mb-8 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">BOOK NOW</h2>
+                    <h2 className="text-[40px] font-[500] text-center mb-8 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-[36px] max-sm:text-white">BOOK NOW</h2>
                     {formStatus.submitted ? (
                         <div className="text-center p-6">
                             <h3 className="text-[24px] font-medium bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent mb-2 max-sm:text-white">Thank you!</h3>

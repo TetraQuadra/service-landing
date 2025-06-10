@@ -75,7 +75,7 @@ const MainServices = () => {
                             <p
                                 className={
                                     "text-[16px] font-normal mb-6 " +
-                                    ((isLg ? (idx === 1 || idx === 2) : (idx === 1 || idx === 3)) ? "text-black " : "text-white ")
+                                    ((isLg ? (idx === 1 || idx === 2) : (idx === 1 || idx === 3)) ? "text-black " : "text-[#ffffffb0]")
                                 }
                             >
                                 {service.description}
