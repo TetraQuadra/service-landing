@@ -3,9 +3,10 @@ import React from 'react';
 
 const CONTACTS = {
     address: 'Unit 1 Bure Valley Close Buxton Norwich NR10 5AF',
-    whatsapp: '+44 7918 450051',
+    whatsapp: '+447918450051',
     phone: '+44 7918 450051',
     facebook: 'https://facebook.com/',
+    email: 'yuriyfixuk@gmail.com',
 };
 
 const ContactsSection: React.FC = () => {
@@ -22,12 +23,12 @@ const ContactsSection: React.FC = () => {
 
                     <div className="mb-8">
                         <div className="text-[28px] font-semibold mb-2 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">WhatsApp</div>
-                        <div className="text-[20px] font-light">{CONTACTS.whatsapp}</div>
+                        <Link href={`https://wa.me/${CONTACTS.whatsapp.replace(/\s+/g, '')}`} className="text-[20px] font-light hover:text-[#25D366] transition-colors">{CONTACTS.whatsapp}</Link>
                     </div>
 
                     <div className="mb-8">
-                        <div className="text-[28px] font-semibold mb-2 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">Phone call</div>
-                        <Link href={`tel:${CONTACTS.phone}`} className="text-[20px] font-light">{CONTACTS.phone}</Link>
+                        <div className="text-[28px] font-semibold mb-2 bg-gradient-to-r from-white via-white to-[#999999] bg-clip-text text-transparent max-sm:text-white">Email</div>
+                        <Link href={`mailto:${CONTACTS.email}`} className="text-[20px] font-light">{CONTACTS.email}</Link>
                     </div>
 
                     <a
